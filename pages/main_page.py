@@ -55,3 +55,6 @@ class MainPage(BasePage):
     def find_and_click_yandex(self):
         logo_yandex = self.wait_and_find_element(MainPageLocators.YANDEX_LOGO)
         logo_yandex.click()
+
+    def find_dzen(self):
+        dzen = self.wait_and_find_element(MainPageLocators.DZEN)

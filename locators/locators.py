@@ -5,6 +5,7 @@ class MainPageLocators:
     JUST_KILL_COOKIE = (By.XPATH, '//button[starts-with(@class, "App_CookieButton")]')
     SCOOTER_LOGO = (By.XPATH, '//*[contains(@Class, "Header_LogoScooter")]')
     YANDEX_LOGO = (By.XPATH, '//*[contains(@Class, "Header_LogoYandex")]')
+    DZEN = (By.XPATH, '//*[contains(@Class,"dzen-layout--desktop-base-header")]')
     @staticmethod                       # функция получения локатора кнопки "Заказать"
     def get_question_answer(button_class):
         return By.XPATH, f'//button[@class = "{button_class}"]'

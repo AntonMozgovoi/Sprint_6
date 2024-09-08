@@ -1,4 +1,5 @@
 import time
+from selenium.webdriver.support.wait import WebDriverWait
 import allure
 from data import Urls
 from pages.main_page import MainPage
@@ -12,5 +13,5 @@ class TestLogoYandex:
         logo_yandex.find_and_click_yandex()
         new_tab = driver.window_handles[1]
         driver.switch_to.window(new_tab)
-        time.sleep(3)
+        logo_yandex.find_dzen()
         assert driver.current_url == Urls.DZEN_PAGE
