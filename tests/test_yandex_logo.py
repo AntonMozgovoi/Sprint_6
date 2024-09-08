@@ -1,7 +1,5 @@
 import time
-
 import allure
-
 from data import Urls
 from pages.main_page import MainPage
 
